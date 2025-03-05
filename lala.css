@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Inter", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Logo */
+.logo {
+  color: #362fd9;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: black;
+}
+
+/* Navigasi */
+nav a {
+  color: black;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* Menambah jarak antar item menu */
+}
+
+nav a:hover,
+nav a.active {
+  color: #0763fa;
+}
+
+/* Bagian kanan header */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Tombol Contact */
+.btn-contact {
+  display: inline-block;
+  background-color: #0763fa; /* Warna biru */
+  color: white; /* Warna teks putih */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 30px;
+  border-radius: 40px; /* Bikin tombol oval */
+  text-align: center;
+  transition: 0.3s; /* Efek hover */
+}
+
+/* Efek hover: lebih terang saat disentuh */
+.btn-contact:hover {
+  background-color: #7babf8;
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Saat checkbox aktif, tampilkan menu */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+}
