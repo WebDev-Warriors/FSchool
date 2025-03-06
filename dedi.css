@@ -1,16 +1,7 @@
-/* Reset gaya default */
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
 /* Styling umum */
 body {
-    background-color: #f4f4f4;
     color: #333;
-    text-align: center;
     padding: 20px;
 }
 
@@ -21,7 +12,6 @@ body {
     padding: 40px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display:flex;
     padding-top: 100px;
 }
@@ -31,14 +21,10 @@ body {
     margin-bottom: 10px;
 }
 
-.academy-intro p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
 
 /* Tombol */
 .buttons {
-    margin: 15px 0;
+    margin: 15px 10PX;
 }
 
 .btn {
@@ -60,30 +46,12 @@ body {
     color: white;
 }
 
-/* Gambar sekolah */
-.image-section img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
 
 /* Section 2: Kenapa Harus DCD Academy */
 .why-choose {
     background: white;
     padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.why-choose h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.why-choose p {
-    font-size: 16px;
-    margin-bottom: 20px;
 }
 
 /* Fitur */
@@ -98,9 +66,10 @@ body {
     background: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
-    width: 200px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    justify-content: center;
 }
 
 .feature img {
