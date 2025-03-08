@@ -1,6 +1,14 @@
 /*Jika Perlu*/
 .awall {
     margin-top: 100px;
+    margin-bottom: 30px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 
 /* Styling Per kata - Start */
@@ -182,3 +190,16 @@ h2 {
     }
   }
   
+  .AboutUs {
+    display: grid;
+    padding: 20px 70px;
+  }
+
+  .PointJ {
+    font-weight: bold;
+    padding-top: 12px;
+  }
+
+  .table {
+    padding: 10px
+  }
