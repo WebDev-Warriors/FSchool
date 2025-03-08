@@ -28,6 +28,8 @@
     font-weight: bold;
     letter-spacing: normal;
     word-spacing: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .biru {
@@ -192,14 +194,67 @@ h2 {
   
   .AboutUs {
     display: grid;
-    padding: 20px 70px;
+    padding: 20px 10%;
   }
 
   .PointJ {
     font-weight: bold;
-    padding-top: 12px;
+    padding-top: 12 px;
   }
 
   .table {
-    padding: 10px
+    padding : 5px 10px;
   }
+
+  .TestiBox {
+    Padding:20px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4%;
+    background-color:#e1eaf9;
+    margin: 5px;
+  }
+
+  .Quote {
+    display: grid;
+    list-style-type: none;
+    font-weight: bold;
+    font-style: italic;
+    padding-top:10px;
+    margin-right: 3%;
+    width: 20%;
+  }
+
+  .Testimoni {
+    list-style-type: none;
+    width: 80%;
+  }
+
+  .TextName {
+    padding-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .TextJob {
+    font-style: italic;
+  }
+
+  /* Khusus Program */
+  .Programs-liD {
+    display: flex;
+    background-color:#213edf;
+    color: white;
+    padding:25px;
+    height: auto;
+    width: 100%;
+    margin: 20px 20px 0px 20px;
+    list-style-type: none;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+}
+
+.Programs-icon2 {
+    height: 100px;
+    border-radius: 10px;
+}
