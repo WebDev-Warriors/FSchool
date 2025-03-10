@@ -192,6 +192,7 @@ h2 {
     }
   }
   
+  /* Tentang Kami */
   .AboutUs {
     display: grid;
     padding: 20px 10%;
@@ -250,11 +251,10 @@ h2 {
     margin: 20px 20px 0px 20px;
     list-style-type: none;
     border-radius: 20px;
-    display: grid;
-    align-items: center;
 }
 
 .Programs-icon2 {
     height: 100px;
     border-radius: 10px;
+    margin-right:5%;
 }
