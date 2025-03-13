@@ -267,7 +267,7 @@ h2 {
 }
 
 /* Responsif */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     /*Responsive Judul*/
     .Judul {
         display: flex;
@@ -288,6 +288,7 @@ h2 {
       /*Responsive Program*/
     .Programs-ul {
       flex-direction: column;
+      align-items: center;
     }
 
     /* Responsive footer*/
@@ -301,4 +302,39 @@ h2 {
 
     /*Responsive Halaman Tentang*/
     
+    /* Judul Utama */
+    .awall {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ubah {
+        color:#0763fa;
+    }
+
+    /*Kolom Quotes*/
+    .table {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .TestiBox {
+        flex-direction: column;
+
+    }
+
+    .Quote {
+        width: 100%;
+    }
+
+    /*Responsive Halaman Programs*/
+    .Programs-Detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Programs-liD {
+        margin: none;
+    }
   }
