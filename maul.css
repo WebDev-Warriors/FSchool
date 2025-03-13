@@ -191,35 +191,6 @@ h2 {
     padding:5px;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-    .Programs-ul {
-      flex-direction: column;
-    }
-  
-    .GambarHome {
-      height: 200px;
-      padding: none;
-    }
-
-    .Iprofil {
-        flex-direction: column;
-    }
-
-    .Judul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer {
-        padding: 0px 20px;
-    }
-    .Fotban {
-        padding: 5px;
-        font-size: 10px;
-    }
-    
-  }
   
   /* Tentang Kami */
   .AboutUs {
@@ -287,3 +258,33 @@ h2 {
     border-radius: 10px;
     margin-right:5%;
 }
+
+/* Responsif */
+@media (max-width: 768px) {
+    .Programs-ul {
+      flex-direction: column;
+    }
+  
+    .GambarHome {
+      height: 200px;
+      padding: none;
+    }
+
+    .Iprofil {
+        flex-direction: column;
+    }
+
+    .Judul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 0px 20px;
+    }
+    .Fotban {
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+  }
