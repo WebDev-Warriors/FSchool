@@ -46,6 +46,11 @@ body {
     color: white;
 }
 
+.btn:hover {
+    color: yellow;
+    font-size: 17px;
+}
+
 
 /* Section 2: Kenapa Harus DCD Academy */
 .why-choose {
