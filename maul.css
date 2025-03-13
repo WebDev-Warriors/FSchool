@@ -48,11 +48,13 @@
 /* Styling Per kata - End */
 
 
+/* penambahan style untuk Intro */
 .intro-text {
     padding: 30px;
     text-align: justify;
 }
 
+/* style untuk Profil */
 .Iprofil {
     display:flex;
     align-items: center;
@@ -61,6 +63,7 @@
     border-radius: 10px;
 }
 
+/* style untuk Gambar (lumayan besar) */
 .GambarHome {
    height: 400px;
    max-width: auto;
@@ -68,6 +71,7 @@
    padding: 20px;
 }
 
+/* style untuk kotak text (menggabung Judul dan text) */
 .KotakText {
     max-width: 800px;
     margin: auto;
@@ -78,12 +82,15 @@ h2 {
     font-size: 24px;
     font-weight: bold;
 }
+
+/* styling untuk text deskripsi standar untuk semua halaman */
 .TextHome {
     font-size: 16px;
     text-align: justify;
     padding-top: 10px;
 }
 
+/* style untuk Program-progam */
 .Programs-p {
     display: grid;
     text-align:center;
@@ -100,7 +107,6 @@ h2 {
 .Programs-ul{
     display: flex;
 }
-
 
 .Programs-li {
     background-color:#213edf;
@@ -145,6 +151,7 @@ h2 {
     }
 }
 
+/* style untuk Footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -192,7 +199,7 @@ h2 {
 }
 
   
-  /* Tentang Kami */
+  /* halaman Tentang Kami */
   .AboutUs {
     display: grid;
     padding: 20px 10%;
@@ -240,7 +247,7 @@ h2 {
     font-style: italic;
   }
 
-  /* Khusus Program */
+  /* Halaman Khusus Program */
   .Programs-liD {
     display: flex;
     background-color:#213edf;
@@ -261,24 +268,29 @@ h2 {
 
 /* Responsif */
 @media (max-width: 768px) {
-    .Programs-ul {
-      flex-direction: column;
-    }
-  
-    .GambarHome {
-      height: 200px;
-      padding: none;
-    }
-
-    .Iprofil {
-        flex-direction: column;
-    }
-
+    /*Responsive Judul*/
     .Judul {
         display: flex;
         flex-direction: column;
     }
 
+    /*Responsive profil*/
+    .Iprofil {
+        flex-direction: column;
+    }
+
+    /*Responsive Gambar Utama*/
+    .GambarHome {
+        height: 200px;
+        padding: none;
+      }
+    
+      /*Responsive Program*/
+    .Programs-ul {
+      flex-direction: column;
+    }
+
+    /* Responsive footer*/
     .footer {
         padding: 0px 20px;
     }
@@ -286,5 +298,7 @@ h2 {
         padding: 5px;
         font-size: 10px;
     }
+
+    /*Responsive Halaman Tentang*/
     
   }
