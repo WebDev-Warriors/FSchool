@@ -31,16 +31,24 @@ nav a {
   font-size: 18px;
   transition: 0.3s;
   font-weight: 500;
+  padding: 10px;
 }
 
 nav {
   display: flex;
-  gap: 20px; /* Menambah jarak antar item menu */
+  gap: 10px; /* Menambah jarak antar item menu */
 }
 
-nav a:hover,
 nav a.active {
   color: #0763fa;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #0763fa;
+  transition:0.5s ease-in-out;
+  transition-delay:0.1s;
+  border-radius: 15px;
 }
 
 /* Bagian kanan header */
@@ -77,30 +85,6 @@ nav a.active {
   display: none;
   font-size: 30px;
   cursor: pointer;
-}
-
-/* Responsif */
-@media (max-width: 770px) {
-  nav {
-    display: none;
-    position: absolute;
-    right: 40px;
-    top: 60px;
-    background: white;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  /* Saat checkbox aktif, tampilkan menu */
-  #menu-toggle:checked ~ nav {
-    display: flex;
-  }
 }
 
 /*Berita*/
@@ -236,3 +220,28 @@ body {
   color: #374151;
   text-decoration-color: #374151;
 }
+
+/* Responsif */
+@media (max-width: 770px) {
+  nav {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Saat checkbox aktif, tampilkan menu */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+}
+
