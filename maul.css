@@ -1,7 +1,11 @@
 /*Jika Perlu*/
 .awall {
     margin-top: 120px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.JudulBesar {
     display:flex;
     text-align: center;
     justify-content: center;
@@ -9,6 +13,8 @@
     font-weight: bold;
     letter-spacing: normal;
     word-spacing: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Styling Per kata - Start */
@@ -90,7 +96,7 @@ h2 {
     padding-top: 10px;
 }
 
-/* style untuk Program-progam index */
+/* style untuk Program-progam index.html */
 .Programs-p {
     display: grid;
     text-align:center;
@@ -138,6 +144,7 @@ h2 {
 .P-Jurursan {
     font-size: 9px;
     text-decoration: underline;
+    cursor:pointer;
 }
 
 .Programs-li:hover {
@@ -247,24 +254,123 @@ h2 {
   }
 
   /* Halaman Khusus Program */
+
+  .Programs-List {
+    display: none;
+  }
+
+  .Programs-List.active {
+    display: block;
+    margin-bottom: 100px;
+  }
+  
   .Programs-liD {
     display: flex;
     background-color:#213edf;
     color: white;
     padding:25px;
-    height: auto;
-    width: 100%;
+    height: auto;;
     margin: 20px 20px 0px 20px;
     list-style-type: none;
     border-radius: 20px;
 }
 
+/* Isi dari Program secara detail */
+.Detail {
+    display: none;
+}
+
+.Detail.active {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    gap: 50px;
+    border-radius: 25px;
+}
+
+.DeProg {
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    margin-top: 5%;
+    
+}
+
+.isip {
+    width: 70%;
+}
+
+/* Nav Program Opsi 2 */
 .Programs-icon2 {
     height: 100px;
     border-radius: 10px;
     margin-right:5%;
 }
 
+.Programs-ulN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    gap: 10px;
+}
+
+.Programs-liN {
+    background-color:#213edf;
+    color: white;
+    padding:20px;
+    height: 80px;
+    width: 170px;
+    list-style-type: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Programs-liN.active {
+    background-color:#0763fa;
+    color: yellow;
+    padding:20px;
+    height: 80px;
+    width: 170px;
+    list-style-type: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Jurusan2 {
+    display: grid;
+    align-items: center;
+    height: 80px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.showAll {
+    background-color: #213edf;
+    color: white;
+    height: 50px;
+    margin-right: 185px;
+    margin-left: 185px;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
 /* Responsif */
 @media (max-width: 770px) {
     /*Responsive Judul*/

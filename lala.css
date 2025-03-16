@@ -39,16 +39,18 @@ nav {
   gap: 10px; /* Menambah jarak antar item menu */
 }
 
+/* Khusus Nav a yang aktive */
 nav a.active {
   color: #0763fa;
 }
 
-nav a:hover {
+/* Hover untuk Nav a yang tidak active */
+nav a:not(.active):hover {
   color: white;
   background-color: #0763fa;
   transition:0.5s ease-in-out;
   transition-delay:0.1s;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 /* Bagian kanan header */
