@@ -228,7 +228,7 @@ h2 {
     padding-top: 12 px;
   }
 
-  .table {
+  .tableNB {
     padding : 5px 10px;
   }
 
@@ -300,6 +300,20 @@ h2 {
     gap: 50px;
     border-radius: 25px;
 }
+
+.TUraian {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.TUraian td {
+    padding: 8px;
+    vertical-align: top; /* Membuat teks tetap rata atas */
+  }
+  
+.TUraian td:first-child {
+    white-space: nowrap; /* Mencegah kategori terpotong menjadi dua baris */
+  }
 
 .DeProg {
     width: 30%;
@@ -393,7 +407,7 @@ h2 {
     background-color: #213edf;
     color: white;
     height: 50px;
-    width: 71%;
+    width: 890px;
     border-radius: 20px;
     display:grid;
     align-items: center;
@@ -476,8 +490,8 @@ h2 {
     }
     
     .DeProg {
-        height: auto;
-        width:300px;
+        height: 95%;
+        width:95%;
     }
 
     .Programs-liD {
@@ -488,6 +502,10 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .TUraian td {
+        padding:1px;
     }
 
     .Programs-ulN {
