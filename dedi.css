@@ -1,9 +1,5 @@
 
-/* Styling umum */
-body {
-    color: #333;
-    padding: 20px;
-}
+
 
 
 /* Section 1: DCD Academy */
@@ -48,7 +44,6 @@ body {
 
 .btn:hover {
     color: yellow;
-    font-size: 17px;
 }
 
 
@@ -87,19 +82,12 @@ body {
     margin-bottom: 5px;
 }
 
-/* Responsif */
-@media (max-width: 600px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Atur tampilan container agar berada di tengah */
-.container {
+/* Atur tampilan PengajarBox agar berada di tengah */
+.PengajarBox {
     width: 100%;
-    margin: 40px auto;
-    margin-top: 80px;
+    margin: 20px auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 /* Styling untuk setiap section */
@@ -109,6 +97,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
+    margin: 20px;
 }
 
 /* Styling untuk judul */
@@ -161,3 +150,37 @@ body {
     font-size: 14px;
     color: #555;
 }
+
+
+/* Responsif */
+@media (max-width: 770px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .academy-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .PengajarBox {
+        margin: none;
+    }
+
+    .section {
+        padding: none;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: none;
+        padding: none;
+    }
+    
+    .content img {
+        height: 280px;
+        width: 210px;
+    }
+}
+
