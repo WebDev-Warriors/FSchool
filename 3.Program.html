@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="lala.css" />
     <link rel="stylesheet" href="maul.css" />
     <link rel="stylesheet" href="dedi.css" />
-    <link rel="stylesheet" href="tetriana.css" />
     <title>DCD Academy</title>
+    <link rel="icon" type="webp" href="Bahan/DCDA-icon.webp">
 </head>
 
 <body>
@@ -34,85 +34,582 @@
     <!--Navigation Bar End-->
 
 
-    <!--Content Start-->
-    <div class="awall">PROGRAM PELATIHAN DCD ACADEMY</div>
-    <div class="Programs-list">
-      <ul class="Programs-Detail">
+    <!-- Main Content Start-->
+
+    <!--Content Nav Start-->
+    <div class="awall">
+      <ul id="NavPro1" class="Programs-List active">
+        <div class="JudulBesar"> <p>PROGRAM PELATIHAN</p><p class="spaceL"></p><p class="ubah">DCD ACADEMY</p> </div>
         <li class="Programs-liD">
-        <img src="Bahan/Web_Development.webp" class="Programs-icon2" />
-        <div>
-            <div class="Jurusan">Web Development</div>
-            <p class="P-Jurursan">Detail</p>
+          <img src="Bahan/Web_Development.webp" class="Programs-icon2" />
+          <div>
+            <div class="Jurusan1">Web Development</div>
+            <p class="TextHome">Pelatihan Web Development ini mengajarkan dasar-dasar HTML, CSS, dan JavaScript dengan metode online dan project-based learning. Peserta akan membangun proyek nyata untuk memahami konsep secara praktis.</p>
+            <button class="P-Jurursan" onclick="BukaDetail('program01')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Graphic_Motion_Design.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Graphic & Motion Design</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Graphic & Motion Design</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program02')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/UIUX_Design.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">UI/UX Design</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">UI/UX Design</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program03')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Software_Engineering.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Software Engineering</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Software Engineering</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program04')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Mobile_App_Development.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Mobile App Development</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Mobile App Development</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program05')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Game_Development.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Game Development</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Game Development</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program06')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Cybersecurity_EHacking.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Cybersecurity & Ethical Hacking</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Cybersecurity & Ethical Hacking</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program07')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/AI & Machine Learning.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Artificial Intelligence & Machine Learning</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Artificial Intelligence & Machine Learning</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program08')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Data_Science_Analytics.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Data Science & Analytics</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Data Science & Analytics</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program09')" >Detail</button>
           </div>
         </li>
         <li class="Programs-liD">
           <img src="Bahan/Cloud_DevOps.webp" class="Programs-icon2" />
           <div>
-            <div class="Jurusan">Cloud Computing & DevOps</div>
-            <p class="P-Jurursan">Coming soon</p>
+            <div class="Jurusan1">Cloud Computing & DevOps</div>
+            <button class="P-Jurursan" onclick="BukaDetail('program10')" >Detail</button>
           </div>
         </li>
       </ul>
+
+      <!--Detail Program Start-->
+
+      <div id="program01" class="Detail">
+        <img src="Bahan/Web_Development.webp" alt="Web_Development" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Web Development</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>Online & Project-Based Learning</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>Muhammad Hakam Faza</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>Beginner class</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>2 Bulan</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Ingin belajar membangun website dari nol hingga bisa online? Pelatihan Web Development ini dirancang khusus bagi pemula yang ingin memahami dasar-dasar pengembangan web dengan metode <span class="highlight"> Online & Project-Based Learning.</span></p>
+          <p class="TextHome">Dalam waktu 2 bulan, peserta akan dibimbing langsung oleh Muhammad Hakam Faza, seorang mentor berpengalaman yang akan membantu memahami setiap konsep dengan pendekatan <span class="highlight">praktis dan interaktif</span>.</p>
+          <p class="TextHome">Dengan metode pembelajaran yang interaktif dan berbasis proyek, Anda tidak hanya belajar teori, tetapi juga langsung mengaplikasikan ke dalam proyek nyata.</p>
+          <p class="TextHome">Bergabunglah sekarang dan mulai perjalanan Anda sebagai Web Developer!</p>
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+      <div id="program02" class="Detail">
+        <img src="Bahan/Graphic_Motion_Design.webp" alt="Graphic_Motion_Design" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Graphic & Motion Design</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+      <div id="program03" class="Detail">
+        <img src="Bahan/UIUX_Design.webp" alt="UI_UX_Design" class="DeProg">
+        <div class="isip">
+          <div class="Judul">UI / UX Design</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program04" class="Detail">
+        <img src="Bahan/Software_Engineering.webp" alt="Software_Engineering" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Software Engineering</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program05" class="Detail">
+        <img src="Bahan/Mobile_App_Development.webp" alt="Mobile_App_Development" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Mobile App Development</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program06" class="Detail">
+        <img src="Bahan/Game_Development.webp" alt="Game_Development" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Game Development</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program07" class="Detail">
+        <img src="Bahan/Cybersecurity_EHacking.webp" alt="CyberSecurity_EHacking" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Cyber Security & Ethical Hacking</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program08" class="Detail">
+        <img src="Bahan/AI & Machine Learning.webp" alt="AI & Machine Learning" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Artificial Intelligence & Machine Learning</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+
+      <div id="program09" class="Detail">
+        <img src="Bahan/Data_Science_Analytics.webp" alt="Data_Science_Analytics" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Data Science Analytics</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
+
+      <div id="program10" class="Detail">
+        <img src="Bahan/Cloud_DevOps.webp" alt="Cloud_DevOps" class="DeProg">
+        <div class="isip">
+          <div class="Judul">Cloud Computing & DevOps</div>
+          <p class="TextHome">
+            <table class="TUraian">
+              <tr>
+                <td><span class="highlight">Metode</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Mentor</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Level</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Durasi</span></td>
+                <td><span class="highlight">:</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><span class="highlight">Deskripsi</span></td>
+                <td><span class="highlight">:</span></td>
+              </tr>
+            </table>
+          </p>
+          <p class="TextHome">Coming Soon...</span></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <p class="TextHome"></p> <!--Di isi Setelah JavaScript beres-->
+          <div class="buttons">
+            <a href="3.Program.html" class="btn primary">Get Started</a>
+            <a href="https://www.youtube.com/" class="btn secondary">Video</a>
+        </div>
+        </div>        
+      </div>
     </div>
 
 
-    <!--Content End-->
+      <!--Detail Program End-->
+
+      <!--Tampilan Navigation setelah click-->
+      <div id="NavPro2" class="Programs-List">
+        <ul class="Programs-ulN">
+          <li id="Aprogram01" class="Programs-liN" onclick="BukaDetail('program01')">
+            <img src="Bahan/Web_Development.webp" class="Programs-icon" />
+            <div class="Jurusan2">Web Development</div>
+          </li>
+          <li id="Aprogram02" class="Programs-liN" onclick="BukaDetail('program02')">
+            <img src="Bahan/Graphic_Motion_Design.webp" class="Programs-icon" />
+            <div class="Jurusan2">Graphic & Motion Design</div>
+          </li>
+          <li id="Aprogram03" class="Programs-liN" onclick="BukaDetail('program03')">
+            <img src="Bahan/UIUX_Design.webp" class="Programs-icon" />
+            <div class="Jurusan2">UI/UX Design</div>
+          </li>
+          <li id="Aprogram04" class="Programs-liN" onclick="BukaDetail('program04')">
+            <img src="Bahan/Software_Engineering.webp" class="Programs-icon" />
+            <div class="Jurusan2">Software Engineering</div>
+          </li>
+          <li id="Aprogram05" class="Programs-liN" onclick="BukaDetail('program05')">
+            <img src="Bahan/Mobile_App_Development.webp" class="Programs-icon" />
+            <div class="Jurusan2">Mobile App Development</div>
+          </li>
+        </ul>
+        <ul class="Programs-ulN">
+          <li id="Aprogram06" class="Programs-liN" onclick="BukaDetail('program06')">
+            <img src="Bahan/Game_Development.webp" class="Programs-icon" />
+            <div class="Jurusan2">Game Development</div>
+          </li>
+          <li id="Aprogram07" class="Programs-liN" onclick="BukaDetail('program07')">
+            <img src="Bahan/Cybersecurity_EHacking.webp" class="Programs-icon" />
+            <div class="Jurusan2">Cyber Security & Ethical Hacking</div>
+          </li>
+          <li id="Aprogram08" class="Programs-liN" onclick="BukaDetail('program08')">
+            <img src="Bahan/AI & Machine Learning.webp" class="Programs-icon" />
+            <div class="Jurusan2">Artificial Intelligence & Machine Learning</div>
+          </li>
+          <li id="Aprogram09" class="Programs-liN" onclick="BukaDetail('program09')">
+            <img src="Bahan/Data_Science_Analytics.webp" class="Programs-icon" />
+            <div class="Jurusan2">Data Science & Analytics</div>
+          </li>
+          <li id="Aprogram10" class="Programs-liN" onclick="BukaDetail('program10')">
+            <img src="Bahan/Cloud_DevOps.webp" class="Programs-icon" />
+            <div class="Jurusan2">Cloud Computing & DevOps</div>
+          </li>
+        </ul>
+        <div class="CshowAll">
+          <p class="showAll" onclick="BukaList(NavPro1)">Lihat semua Detail Programs</p>
+        </div>
+      </div>
+
+    <!--Tampilan Navigation setelah click End-->
+
+
+    <!--Main Content End-->
 
 
     <!--Footer Start-->
@@ -130,6 +627,7 @@
       </section>
     </footer>
     <!--Footer End-->
+    <script src="3.Program.Js"></script>
 </body>
 
 </html>
