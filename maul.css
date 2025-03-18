@@ -444,7 +444,8 @@ h2 {
 
     /*Responsive Gambar Utama*/
     .GambarHome {
-        height: 200px;
+        max-width: 100%;
+        height: auto;
         padding: none;
       }
     
@@ -452,6 +453,10 @@ h2 {
     .Programs-ul {
       flex-direction: column;
       align-items: center;
+    }
+
+    .P-Jurursan {
+        font-size: 12px;
     }
 
     /* Responsive footer*/
