@@ -133,9 +133,8 @@ h2 {
 }
 
 .Jurusan {
-    display: grid;
-    align-items: center;
-    height: 80px;
+    display: inline-block;
+    margin:20px 0px;
     font-size: 16px;
     font-weight: bold;
     text-decoration: underline;
@@ -328,6 +327,7 @@ h2 {
   
 .TUraian td:first-child {
     white-space: nowrap; /* Mencegah kategori terpotong menjadi dua baris */
+    width: 30%;
   }
 
 .DeProg {
@@ -429,7 +429,44 @@ h2 {
 .showAll:hover {
     background-color:#0763fa;
 }
+
+/*Page Khusus*/
+.unik {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0px;
+}
+
+.coming-soon {
+    font-size: 20vh;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.kembali {
+    max-width: 20%;
+    color:#e1eaf9;
+    background-color: #213edf;
+    border-radius: 20px;
+    padding:10px;
+    margin-top: 20px;
+}
+
+.kembali:hover {
+    background-color: #0763fa;
+    color: yellow;
+}
+
 /* Responsif */
+@media (max-width: 910px) {
+    .coming-soon {
+        font-size: 16vh;
+    }
+}
 @media (max-width: 770px) {
     /*Responsive Judul*/
     .Judul {
@@ -453,6 +490,14 @@ h2 {
     .Programs-ul {
       flex-direction: column;
       align-items: center;
+    }
+
+    .Programs-li {
+        justify-items: center;
+    }
+
+    .Jurusan {        
+        text-align: center;
     }
 
     .P-Jurursan {
@@ -507,6 +552,7 @@ h2 {
     .Programs-liD {
         margin: none;
         flex-direction: column;
+        align-items: center;
     }
 
     .Programs-icon2 {
@@ -538,5 +584,13 @@ h2 {
     .showAll {
         width: 170px;
         font-size: 10px;
+    }
+
+    .unik {
+        padding: 200px 50px;
+    }
+    
+    .coming-soon {
+        font-size: 300%;
     }
   }

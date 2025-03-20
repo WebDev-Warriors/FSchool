@@ -1,0 +1,7 @@
+Di push ke Git Hub @20-03-2025
+
+Update Responsive Website, Menambah Halaman -Coming Soon-, Ganti Title Halaman.
+
+Memperbaiki style .Jurusan >> menghapus height dan align, lalu merubah display menjadi inline-block.//. Menambah style Responsive = .Jurusan >> text-align:center ,, .Program-liD >> align-item:center ,, .TUraian td:first-child >> width:30% .//. Menambah Halaman Coming-Soon, beserta class: unik, coming-soon, kembali
+
+Belum di push ke Git Hub:
