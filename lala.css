@@ -31,16 +31,26 @@ nav a {
   font-size: 18px;
   transition: 0.3s;
   font-weight: 500;
+  padding: 10px;
 }
 
 nav {
   display: flex;
-  gap: 20px; /* Menambah jarak antar item menu */
+  gap: 10px; /* Menambah jarak antar item menu */
 }
 
-nav a:hover,
+/* Khusus Nav a yang aktive */
 nav a.active {
   color: #0763fa;
+}
+
+/* Hover untuk Nav a yang tidak active */
+nav a:not(.active):hover {
+  color: white;
+  background-color: #0763fa;
+  transition:0.5s ease-in-out;
+  transition-delay:0.1s;
+  border-radius: 13px;
 }
 
 /* Bagian kanan header */
@@ -79,33 +89,8 @@ nav a.active {
   cursor: pointer;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    position: absolute;
-    right: 40px;
-    top: 60px;
-    background: white;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  /* Saat checkbox aktif, tampilkan menu */
-  #menu-toggle:checked ~ nav {
-    display: flex;
-  }
-}
-
 /*Berita*/
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   color: #070707;
@@ -237,3 +222,28 @@ body {
   color: #374151;
   text-decoration-color: #374151;
 }
+
+/* Responsif */
+@media (max-width: 770px) {
+  nav {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Saat checkbox aktif, tampilkan menu */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+}
+
